@@ -52,4 +52,41 @@ Here is a pre-start checklist:
 
 ## Implementation
 
-** ADD YOUR IMPLEMENTATION DOCUMENTATION HERE **
+# Hive Box App
+
+This is a simple Python app that uses Docker for containerization. Follow the instructions below to build and run the application.
+
+## Prerequisites
+
+- [Docker](https://www.docker.com/products/docker-desktop) installed on your system.
+
+## Setup and Running the App
+
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/MohamedAliKhalil1/devops-hands-on-project-hivebox.git
+cd devops-hands-on-project-hivebox
+```
+
+### 2. Build the Docker Image
+
+Once inside the project directory, build the Docker image using the following command:
+
+```bash
+docker build -t hivebox:0.2.0 .
+```
+
+This command will:
+
+- Build the Docker image using the Dockerfile.
+- Tag the image with the name hivebox and version 0.2.0.
+
+### 3. Run the Docker Container
+
+After the image is built, you can run the app in a Docker container. Use the following command to start the container:
+```bash
+docker run -it hivebox:0.2.0
+```
