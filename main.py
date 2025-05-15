@@ -1,7 +1,7 @@
+from fastapi import FastAPI
 from app import __version__
+from app.routers import version
 
-def main():
-    print(__version__)
+app = FastAPI(title="HiveBox App", version=__version__)
 
-if __name__ == "__main__":
-    main()
+app.include_router(version.router)
